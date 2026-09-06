@@ -1,0 +1,769 @@
+# ============================================================
+# CAMPUSTRACK - COMPLETE GITIGNORE
+# ============================================================
+
+
+# ============================================================
+# 1. ENVIRONMENT VARIABLES & SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Environment files in frontend/backend
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+!frontend/.env.template
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+!backend/.env.template
+
+# Local configuration files
+config.local.*
+config.*.local
+secrets/
+secret/
+.secrets/
+credentials/
+credential/
+private/
+private-data/
+
+
+# ============================================================
+# 2. DATABASE / LOCAL DATABASE FILES
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Local database dumps / backups
+*.sql
+*.dump
+*.bak
+*.backup
+*.db-backup
+database-backup/
+db-backup/
+database/backups/
+backups/
+
+# IMPORTANT:
+# If your project contains schema.sql or seed.sql that is SAFE
+# and required for setup, force-add it explicitly if needed.
+
+
+# ============================================================
+# 3. USER UPLOADS / PRIVATE FILES
+# ============================================================
+
+uploads/
+upload/
+uploaded/
+user-uploads/
+user_uploads/
+public/uploads/
+public/upload/
+backend/uploads/
+backend/upload/
+server/uploads/
+server/upload/
+
+# Images uploaded during local testing
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.heic
+*.heif
+
+# Documents uploaded during testing
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.csv
+
+# NOTE:
+# Remove the image/document extensions above if your project
+# intentionally stores public assets with these extensions.
+
+
+# ============================================================
+# 4. NODE.JS / NPM / JAVASCRIPT
+# ============================================================
+
+node_modules/
+**/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+# npm package lock files are NOT ignored intentionally.
+# Keep package-lock.json / yarn.lock / pnpm-lock.yaml tracked.
+
+
+# ============================================================
+# 5. REACT / VITE BUILD FILES
+# ============================================================
+
+dist/
+build/
+out/
+coverage/
+
+frontend/dist/
+frontend/build/
+frontend/out/
+frontend/coverage/
+
+backend/dist/
+backend/build/
+backend/out/
+backend/coverage/
+
+.vite/
+vite.config.local.*
+
+
+# ============================================================
+# 6. CACHE FILES
+# ============================================================
+
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+.nx/
+.next/
+.nuxt/
+.svelte-kit/
+
+*.tsbuildinfo
+
+
+# ============================================================
+# 7. LOGS
+# ============================================================
+
+logs/
+log/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime logs
+*.pid
+*.pid.lock
+
+
+# ============================================================
+# 8. TEMPORARY FILES
+# ============================================================
+
+tmp/
+temp/
+.tmp/
+.temp/
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+
+# Crash dumps
+*.dmp
+crash-reports/
+
+
+# ============================================================
+# 9. IDE / EDITOR FILES
+# ============================================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+
+
+# ============================================================
+# 10. OPERATING SYSTEM FILES
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+.Trash-*
+
+
+# ============================================================
+# 11. SECURITY / CERTIFICATES / KEYS
+# ============================================================
+
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Certificates
+*.crt
+*.cer
+*.der
+
+# SSL/TLS
+ssl/
+cert/
+certs/
+certificates/
+
+# Cloud credentials
+.aws/
+.gcloud/
+.azure/
+
+# Service account files
+service-account*.json
+serviceAccount*.json
+*-service-account*.json
+credentials*.json
+
+# Firebase credentials
+firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+
+
+# ============================================================
+# 12. AUTHENTICATION / TOKENS / SESSIONS
+# ============================================================
+
+tokens/
+token/
+sessions/
+session/
+auth/
+*.token
+*.tokens
+*.jwt
+*.cookie
+
+# Local auth/session data
+auth.json
+session.json
+cookies.json
+tokens.json
+credentials.json
+
+
+# ============================================================
+# 13. API KEYS / SECRET CONFIG FILES
+# ============================================================
+
+*secret*.json
+*secret*.js
+*secret*.ts
+*secrets*.json
+*credentials*.json
+
+api-key.*
+api_keys.*
+apikey.*
+api-keys.*
+
+*_secret
+*_secrets
+*_password
+*_token
+*_tokens
+
+# Local configuration
+local-config.*
+local-config.json
+local-config.js
+local-config.ts
+
+
+# ============================================================
+# 14. TEST DATA / PRIVATE DEMO DATA
+# ============================================================
+
+test-data/
+test_data/
+private-test-data/
+mock-private-data/
+demo-private-data/
+
+# Exported user/student data
+students.csv
+students.json
+users.csv
+users.json
+user-data/
+student-data/
+
+# Reports containing potentially personal information
+exports/
+export/
+reports/private/
+reports/generated/
+
+
+# ============================================================
+# 15. PERSONAL / PII DATA
+# ============================================================
+
+# Avoid committing real personal information
+*.vcf
+*.contacts
+
+personal-data/
+pii/
+personal/
+private-data/
+
+# Local address/contact datasets
+contacts.json
+contacts.csv
+phonebook.json
+phonebook.csv
+
+
+# ============================================================
+# 16. FRONTEND LOCAL STORAGE / DEBUG DATA
+# ============================================================
+
+.local/
+.local-data/
+local-data/
+
+*.local.json
+*.local.js
+*.local.ts
+
+# Browser test data
+browser-data/
+playwright/.cache/
+cypress/videos/
+cypress/screenshots/
+
+
+# ============================================================
+# 17. TESTING / COVERAGE
+# ============================================================
+
+coverage/
+.nyc_output/
+jest-results/
+test-results/
+playwright-report/
+blob-report/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+
+# ============================================================
+# 18. DOCKER
+# ============================================================
+
+# Local Docker overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker secrets
+docker-secrets/
+.docker/
+
+# Do NOT ignore Dockerfile or docker-compose.yml if they contain
+# NO hardcoded secrets.
+
+
+# ============================================================
+# 19. PYTHON / DATA SCIENCE (IF USED)
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+env/
+ENV/
+
+*.ipynb_checkpoints/
+
+
+# ============================================================
+# 20. JAVA / SPRING BOOT (IF ANY MODULE IS ADDED)
+# ============================================================
+
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+.gradle/
+build/
+
+# Keep gradle wrapper files tracked
+# gradle-wrapper.jar should normally be tracked.
+
+
+# ============================================================
+# 21. MOBILE / ANDROID (IF ADDED IN FUTURE)
+# ============================================================
+
+.gradle/
+.idea/
+local.properties
+
+*.apk
+*.aab
+
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android signing
+*.jks
+*.keystore
+
+
+# ============================================================
+# 22. GENERATED DOCUMENTS / EXPORTS
+# ============================================================
+
+generated/
+generated-files/
+generated_files/
+
+*.generated.*
+*.export.*
+
+# Local reports
+*.report
+*.report.json
+
+
+# ============================================================
+# 23. AI / LOCAL MODEL FILES (IF USED)
+# ============================================================
+
+models/
+model/
+checkpoints/
+weights/
+
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+
+# ============================================================
+# 24. CLOUD / DEPLOYMENT LOCAL FILES
+# ============================================================
+
+.vercel/
+.netlify/
+.firebase/
+serverless/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Pulumi
+Pulumi.*.yaml
+.pulumi/
+
+
+# ============================================================
+# 25. RUNTIME / PROCESS FILES
+# ============================================================
+
+*.pid
+*.pid.lock
+pids/
+run/
+
+
+# ============================================================
+# 26. GENERATED API / DEBUG OUTPUT
+# ============================================================
+
+api-response/
+api-responses/
+debug/
+debug-data/
+debug-output/
+
+*.response.json
+*.response.txt
+
+
+# ============================================================
+# 27. BACKUP / ARCHIVE FILES
+# ============================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.gz
+
+# Local project backups
+project-backup/
+project_backups/
+old/
+_old/
+backup/
+backups/
+
+
+# ============================================================
+# 28. OS / TOOL METADATA
+# ============================================================
+
+.nvmrc.local
+.node-version.local
+
+.history/
+.fleet/
+.vscode-test/
+
+
+# ============================================================
+# 29. MCP / LOCAL TOOL CONFIGURATION
+# ============================================================
+
+.mcp/
+mcp/
+.mcp.json
+
+# Local AI/tool configuration
+.ai/
+.ai-local/
+.claude/
+.cursor/
+.windsurf/
+
+
+# ============================================================
+# 30. ENVIRONMENT / MACHINE-SPECIFIC CONFIG
+# ============================================================
+
+.machine/
+.machine-local/
+machine.local.*
+computer.local.*
+workspace.local.*
+
+
+# ============================================================
+# 31. GENERATED FRONTEND ASSETS / LOCAL EXPORTS
+# ============================================================
+
+frontend/.cache/
+frontend/.tmp/
+frontend/tmp/
+frontend/temp/
+
+backend/.cache/
+backend/.tmp/
+backend/tmp/
+backend/temp/
+
+
+# ============================================================
+# 32. SECRET / PRIVATE FILE NAMES
+# ============================================================
+
+secret.*
+secrets.*
+private.*
+confidential.*
+password.*
+passwords.*
+
+*.secret
+*.secrets
+*.private
+*.confidential
+
+
+# ============================================================
+# 33. LOCAL ENVIRONMENT CONFIGURATION
+# ============================================================
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+
+# ============================================================
+# 34. DO NOT COMMIT LOCAL DATABASE / UPLOAD STORAGE
+# ============================================================
+
+storage/
+local-storage/
+server-storage/
+data/
+data/local/
+data/private/
+
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ============================================================
+# 35. IDE WORKSPACE / PROJECT STATE
+# ============================================================
+
+*.code-workspace
+
+# VS Code local history
+.history/
+
+# JetBrains
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries/
+.idea/**/shelf/
+
+
+# ============================================================
+# 36. MAC / WINDOWS DEVELOPMENT ARTIFACTS
+# ============================================================
+
+*.lnk
+*.url
+
+# Windows installer leftovers
+*.msi
+*.exe
+
+# macOS archives
+.DS_Store
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# ============================================================
+# 37. OPTIONAL: LOCAL FRONTEND BUILD CONFIG
+# ============================================================
+
+vite.config.local.*
+webpack.config.local.*
+rollup.config.local.*
+
+# ============================================================
+# END OF CAMPUS TRACK GITIGNORE
+# ============================================================
