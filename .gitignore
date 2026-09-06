@@ -320,7 +320,8 @@ tokens/
 token/
 sessions/
 session/
-auth/
+.auth/
+
 *.token
 *.tokens
 *.jwt
